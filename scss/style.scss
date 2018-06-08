@@ -130,7 +130,7 @@ a {
   header
 --------------------------------------------------------------------*/
 #header {
-  padding: 20px 30px 20px;
+  padding: 20px 50px 20px;
 	#logo {
 		width: 230px;
 		img {
@@ -145,6 +145,69 @@ a {
 			&:after {
 				content: url(../img/header-aplly.png);
 				margin-left: 10px;
+			}
+		}
+	}
+}
+/*--------------------------------------------------------------------
+  fv
+--------------------------------------------------------------------*/
+.fv {
+  align-items: center;
+	height: 600px;
+	background: url(../img/fv-img.png) no-repeat top right;
+	position: relative;
+	.bg {
+		height: 600px;
+		width: 100%;
+		margin-top: 100px;
+		background: #fff4e0;
+		position: absolute;
+		z-index: -1;
+	}
+	.fv-inner {
+		width: 1080px;
+		margin: 0 auto;
+	}
+	.fv-title {
+		font-size: 55px;
+		color: #333;
+		font-family: 'Montserrat', sans-serif;
+		line-height: 1.15;
+	}
+	.fv-sub-title {
+		color: #ff0000;
+		font-size: 26px;
+		margin-top: 20px;
+		letter-spacing: 4px;
+	}
+	.apply-wrapper {
+		position: absolute;
+		bottom: -20px;
+		margin: auto;
+		left: 0;
+		right: 0;
+	}
+	.apply {
+		a {
+			display: inline-block;
+			width: 380px;
+			text-align: center;
+			padding: 40px 0;
+			color: #fff;
+			background: linear-gradient(to right, #fe3000, #fb8c01);
+	    background: -moz-linear-gradient(left, #fe3000, #fb8c01);
+	    background: -webkit-linear-gradient(left, #fe3000, #fb8c01);
+			position: relative;
+			letter-spacing: 2px;
+			font-size: 20px;
+			&:after {
+				content: url(../img/btn-arrow-w.png);
+				float: right;
+				margin-right: 10px;
+				position: absolute;
+				top: 38px;
+				right:10px;
 			}
 		}
 	}

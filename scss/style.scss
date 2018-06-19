@@ -170,14 +170,32 @@ a {
   header
 --------------------------------------------------------------------*/
 #header {
-  padding: 20px 50px 20px;
+  padding: 20px 50px;
+	@media screen and (max-width: 414px){
+		padding: 20px 5%;
+	}
 	#logo {
-		width: 230px;
+		max-width: 230px;
+		@media screen and (max-width: 414px){
+			width: 169px;
+			margin-top: 5px;
+		}
+		@media screen and (max-width: 320px){
+			width: 150px;
+			margin-top: 5px;
+		}
 		img {
 			width: 100%;
 		}
 	}
 	.enroll {
+		@media screen and (max-width: 414px){
+			font-size: 14px;
+			margin-top: 2px;
+		}
+		@media screen and (max-width: 320px){
+			margin-top: 0;
+		}
 		a {
 			color: #333;
 			display: block;

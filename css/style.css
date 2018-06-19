@@ -206,15 +206,48 @@ a:hover {
   header
 --------------------------------------------------------------------*/
 #header {
-  padding: 20px 50px 20px;
+  padding: 20px 50px;
+}
+
+@media screen and (max-width: 414px) {
+  #header {
+    padding: 20px 5%;
+  }
 }
 
 #header #logo {
-  width: 230px;
+  max-width: 230px;
+}
+
+@media screen and (max-width: 414px) {
+  #header #logo {
+    width: 169px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #header #logo {
+    width: 150px;
+    margin-top: 5px;
+  }
 }
 
 #header #logo img {
   width: 100%;
+}
+
+@media screen and (max-width: 414px) {
+  #header .enroll {
+    font-size: 14px;
+    margin-top: 2px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #header .enroll {
+    margin-top: 0;
+  }
 }
 
 #header .enroll a {

@@ -523,7 +523,20 @@ a {
 					position: absolute;
 					top: 40px;
 					right: 30px;
+				}
+			}
+			.minus {
+				&::after {
 					background: url(../img/plus.png) no-repeat center center/contain;
+				}
+			}
+			.plus {
+				&::after {
+					content: "";
+					display: block;
+					width: 22px;
+					height: 22px;
+					background: url(../img/minus.png) no-repeat center center/contain;
 				}
 			}
 			.answer {
@@ -547,16 +560,6 @@ a {
 					margin-right: 20px;
 					font-weight: bold;
 					font-size: 20px;
-				}
-				&::after {
-					content: "";
-					display: block;
-					width: 22px;
-					height: 22px;
-					position: absolute;
-					top: 40px;
-					right: 30px;
-					background: url(../img/plus.png) no-repeat center center/contain;
 				}
 			}
 		}

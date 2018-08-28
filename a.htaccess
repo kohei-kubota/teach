@@ -1,0 +1,4 @@
+AuthUserFile /var/www/html/.htpasswd
+AuthType Basic
+AuthName "Web access"
+Require valid-user
